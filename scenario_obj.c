@@ -1742,6 +1742,7 @@ static void
       util_trim (line);
       if (strlen (line) > 0)
       {
+	if (line[0] == '\0') continue;
         keyword = strtok (line, "=");
         if (!strcmp (keyword, "INPUT_DIR"))
         {

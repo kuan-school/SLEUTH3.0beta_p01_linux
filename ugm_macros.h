@@ -70,6 +70,10 @@
           scen_CloseLog();                                                \
         }
 
+#define LOG_DEBUG(fmt, ...) \
+        fprintf(stderr, "DEBUG PE: %u line: %d Func: %s Module: %s " fmt "\n", \
+           glb_mype,__LINE__,func,__FILE__, ##__VA_ARGS__)
+
 #define MAX(a,b) (((a)>(b))?(a):(b))
 
 #define MIN(a,b) (((a)<(b))?(a):(b))

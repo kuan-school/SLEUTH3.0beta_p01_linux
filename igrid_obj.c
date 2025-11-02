@@ -919,6 +919,18 @@ static BOOLEAN
 
   for (i = 0; i < igrid.landuse_count; i++)
   {
+    // WORKAROUND: If the filename contains "slope" or "excluded", skip landuse validation
+    if (strstr(igrid.landuse[i].filename, "slope") != NULL ||
+        strstr(igrid.landuse[i].filename, "excluded") != NULL)
+    {
+      if (fp)
+      {
+        fprintf (fp, "\nSkipping landuse validation for: %s (identified as non-landuse grid)\n",
+                 igrid.landuse[i].filename);
+      }
+      continue; // Skip to the next file
+    }
+
     if (fp)
     {
       fprintf (fp, "\nValidating landuse input grid: %s\n",

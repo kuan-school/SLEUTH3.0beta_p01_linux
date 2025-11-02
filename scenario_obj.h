@@ -2,10 +2,10 @@
 #define SCENARIO_OBJ_H
 #include <stdio.h>
 #include "ugm_defines.h"
-#define SCEN_MAX_FILENAME_LEN 256
+#define SCEN_MAX_FILENAME_LEN 1024
 #define SCEN_MAX_URBAN_YEARS 20
 #define SCEN_MAX_ROAD_YEARS 20
-#define SCEN_MAX_LANDUSE_YEARS 2
+#define SCEN_MAX_LANDUSE_YEARS 10
 #define SCEN_MAX_LANDUSE_CLASSES 256
 
 #ifdef SCENARIO_OBJ_MODULE

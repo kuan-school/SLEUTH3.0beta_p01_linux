@@ -332,8 +332,8 @@ void
   int i;
   int color_val;
   char zeroes[] = "000000";
-  char color_str[6];
-  char hex_str[6];
+  char color_str[8];
+  char hex_str[8];
 
   fprintf (fp,
       "\n*********************LOGGING COLORTABLES*****************\n\n");

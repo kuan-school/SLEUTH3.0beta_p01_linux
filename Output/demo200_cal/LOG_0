@@ -87,7 +87,7 @@
 ***************************************************************************
 
 
-DATE OF RUN: Sun Nov  2 13:37:56 2025
+DATE OF RUN: Sun Nov  2 13:40:36 2025
 
 USER: codespace
 HOST: (null)
@@ -98,61 +98,61 @@ Type of architecture: 64 bit
 Number of CPUs 1 
 
 PWD: /workspaces/SLEUTH3.0beta_p01_linux/Scenarios
-Scenario File: scenario.taipei_coarse_base_calib
+Scenario File: scenario.demo200_calibrate
 Type of Processing: CALIBRATING
 
 
-scenario.filename = scenario.taipei_coarse_base_calib
-scenario.input_dir = ../Input/taipei_coarse_base/
-scenario.output_dir = ../output_coarse_calib/
+scenario.filename = scenario.demo200_calibrate
+scenario.input_dir = ../Input/demo200/
+scenario.output_dir = ../Output/demo200_cal/
 scenario.whirlgif_binary = ../Whirlgif/whirlgif
-scenario.urban_data_file[0] = taipei_coarse_base.urban.1993.gif
-scenario.urban_data_file[1] = taipei_coarse_base.urban.2006.gif
-scenario.urban_data_file[2] = taipei_coarse_base.urban.2025.gif
-scenario.road_data_file[0] = taipei_coarse_base.roads.1993.gif
-scenario.road_data_file[1] = taipei_coarse_base.roads.2006.gif
-scenario.road_data_file[2] = taipei_coarse_base.roads.2025.gif
-scenario.landuse_data_file[0] = taipei_coarse_base.landuse.1993.gif
-scenario.landuse_data_file[1] = taipei_coarse_base.landuse.2006.gif
-scenario.landuse_data_file[2] = taipei_coarse_base.landuse.2025.gif
-scenario.landuse_data_file[3] = taipei_coarse_base.landuse.2025.gif
-scenario.excluded_data_file = taipei_coarse_base.excluded.gif
-scenario.slope_data_file = taipei_coarse_base.slope_remapped.gif
-scenario.background_data_file = taipei_coarse_base.hillshade.gif
+scenario.urban_data_file[0] = demo200.urban.1930.gif
+scenario.urban_data_file[1] = demo200.urban.1950.gif
+scenario.urban_data_file[2] = demo200.urban.1970.gif
+scenario.urban_data_file[3] = demo200.urban.1990.gif
+scenario.road_data_file[0] = demo200.roads.1930.gif
+scenario.road_data_file[1] = demo200.roads.1950.gif
+scenario.road_data_file[2] = demo200.roads.1970.gif
+scenario.road_data_file[3] = demo200.roads.1990.gif
+scenario.landuse_data_file[0] = demo200.landuse.1930.gif
+scenario.landuse_data_file[1] = demo200.landuse.1990.gif
+scenario.excluded_data_file = demo200.excluded.gif
+scenario.slope_data_file = demo200.slope.gif
+scenario.background_data_file = demo200.hillshade.water.gif
 scenario.echo = 1
 scenario.logging = 1
 scenario.log_processing_status = 1
 scenario.random_seed = 1
 scenario.num_working_grids = 2
-scenario.monte_carlo_iterations = 5
+scenario.monte_carlo_iterations = 2
 scenario.start.diffusion = 0
 scenario.stop.diffusion = 100
-scenario.step.diffusion = 25
+scenario.step.diffusion = 100
 scenario.best_fit.diffusion = 20
 scenario.start.breed = 0
 scenario.stop.breed = 100
-scenario.step.breed = 25
+scenario.step.breed = 100
 scenario.best_fit.breed = 20
 scenario.start.spread = 0
 scenario.stop.spread = 100
-scenario.step.spread = 25
+scenario.step.spread = 100
 scenario.best_fit.spread = 20
 scenario.start.slope_resistance = 0
 scenario.stop.slope_resistance = 100
-scenario.step.slope_resistance = 25
+scenario.step.slope_resistance = 100
 scenario.best_fit.slope_resistance = 20
 scenario.start.road_gravity = 0
 scenario.stop.road_gravity = 100
-scenario.step.road_gravity = 25
+scenario.step.road_gravity = 100
 scenario.best_fit.road_gravity = 20
 scenario.prediction_start_date = 1990
 scenario.prediction_stop_date = 2010
 scenario.date_color = ffffff
 scenario.seed_color = f9d16e
 scenario.water_color = 1434d6
-scenario.probability_color[4].lower_bound = 30
-scenario.probability_color[4].upper_bound = 40
-scenario.probability_color[4].color = 6666
+scenario.probability_color[2].lower_bound = 10
+scenario.probability_color[2].upper_bound = 20
+scenario.probability_color[2].color = CC33
 scenario.rd_grav_sensitivity = 0.010000
 scenario.slope_sensitivity = 0.100000
 scenario.critical_low = 0.970000
@@ -161,7 +161,7 @@ scenario.critical_slope = 15.000000
 scenario.boom = 1.010000
 scenario.bust = 0.090000
 scenario.log_base_stats = 1
-scenario.log_debug = 1
+scenario.log_debug = 0
 scenario.log_urbanization_attempts = 0
 scenario.log_coeff = 0
 scenario.log_timings = 1
@@ -211,60 +211,60 @@ coeff_obj.c 1259 stop_coeff.spread = 100
 coeff_obj.c 1260 stop_coeff.breed = 100
 coeff_obj.c 1261 stop_coeff.slope_resistance = 100
 coeff_obj.c 1262 stop_coeff.road_gravity = 100
-coeff_obj.c 1216 step_coeff.diffusion = 25
-coeff_obj.c 1217 step_coeff.spread = 25
-coeff_obj.c 1218 step_coeff.breed = 25
-coeff_obj.c 1219 step_coeff.slope_resistance = 25
-coeff_obj.c 1220 step_coeff.road_gravity = 25
+coeff_obj.c 1216 step_coeff.diffusion = 100
+coeff_obj.c 1217 step_coeff.spread = 100
+coeff_obj.c 1218 step_coeff.breed = 100
+coeff_obj.c 1219 step_coeff.slope_resistance = 100
+coeff_obj.c 1220 step_coeff.road_gravity = 100
 coeff_obj.c 1279 best_fit_coeff.diffusion = 20
 coeff_obj.c 1280 best_fit_coeff.spread = 20
 coeff_obj.c 1281 best_fit_coeff.breed = 20
 coeff_obj.c 1282 best_fit_coeff.slope_resistance = 20
 coeff_obj.c 1283 best_fit_coeff.road_gravity = 20
-memory_obj.c 716 Allocated 24542792 bytes of memory
-1771761688 igrid_array[0].ptr
-1772930392 igrid_array[1].ptr
-1774099096 igrid_array[2].ptr
-1775267800 igrid_array[3].ptr
-1776436504 igrid_array[4].ptr
-1777605208 igrid_array[5].ptr
-1778773912 igrid_array[6].ptr
-1779942616 igrid_array[7].ptr
-1781111320 igrid_array[8].ptr
-1782280024 igrid_array[9].ptr
-1783448728 igrid_array[10].ptr
-1784617432 igrid_array[11].ptr
-1785786136 igrid_array[12].ptr
-pgrid_array[0].ptr = 1786954840
-pgrid_array[1].ptr = 1788123544
-pgrid_array[2].ptr = 1789292248
-pgrid_array[3].ptr = 1790460952
-pgrid_array[4].ptr = 1791629656
-pgrid_array[5].ptr = 1792798360
-wgrid_array[0].ptr = 1793967064
-wgrid_array[1].ptr = 1795135768
-mem_check_array[0].ptr = 1771761680
-mem_check_array[1].ptr = 1772930384
-mem_check_array[2].ptr = 1774099088
-mem_check_array[3].ptr = 1775267792
-mem_check_array[4].ptr = 1776436496
-mem_check_array[5].ptr = 1777605200
-mem_check_array[6].ptr = 1778773904
-mem_check_array[7].ptr = 1779942608
-mem_check_array[8].ptr = 1781111312
-mem_check_array[9].ptr = 1782280016
-mem_check_array[10].ptr = 1783448720
-mem_check_array[11].ptr = 1784617424
-mem_check_array[12].ptr = 1785786128
-mem_check_array[13].ptr = 1786954832
-mem_check_array[14].ptr = 1788123536
-mem_check_array[15].ptr = 1789292240
-mem_check_array[16].ptr = 1790460944
-mem_check_array[17].ptr = 1791629648
-mem_check_array[18].ptr = 1792798352
-mem_check_array[19].ptr = 1793967056
-mem_check_array[20].ptr = 1795135760
-mem_check_array[21].ptr = 1796304464
+memory_obj.c 716 Allocated 6720176 bytes of memory
+-272941032 igrid_array[0].ptr
+-272621024 igrid_array[1].ptr
+-272301016 igrid_array[2].ptr
+-271981008 igrid_array[3].ptr
+-271661000 igrid_array[4].ptr
+-271340992 igrid_array[5].ptr
+-271020984 igrid_array[6].ptr
+-270700976 igrid_array[7].ptr
+-270380968 igrid_array[8].ptr
+-270060960 igrid_array[9].ptr
+-269740952 igrid_array[10].ptr
+-269420944 igrid_array[11].ptr
+-269100936 igrid_array[12].ptr
+pgrid_array[0].ptr = -268780928
+pgrid_array[1].ptr = -268460920
+pgrid_array[2].ptr = -268140912
+pgrid_array[3].ptr = -267820904
+pgrid_array[4].ptr = -267500896
+pgrid_array[5].ptr = -267180888
+wgrid_array[0].ptr = -266860880
+wgrid_array[1].ptr = -266540872
+mem_check_array[0].ptr = -272941040
+mem_check_array[1].ptr = -272621032
+mem_check_array[2].ptr = -272301024
+mem_check_array[3].ptr = -271981016
+mem_check_array[4].ptr = -271661008
+mem_check_array[5].ptr = -271341000
+mem_check_array[6].ptr = -271020992
+mem_check_array[7].ptr = -270700984
+mem_check_array[8].ptr = -270380976
+mem_check_array[9].ptr = -270060968
+mem_check_array[10].ptr = -269740960
+mem_check_array[11].ptr = -269420952
+mem_check_array[12].ptr = -269100944
+mem_check_array[13].ptr = -268780936
+mem_check_array[14].ptr = -268460928
+mem_check_array[15].ptr = -268140920
+mem_check_array[16].ptr = -267820912
+mem_check_array[17].ptr = -267500904
+mem_check_array[18].ptr = -267180896
+mem_check_array[19].ptr = -266860888
+mem_check_array[20].ptr = -266540880
+mem_check_array[21].ptr = -266220872
 memory_obj.c 462 MEMORY CHECK at main.c main 324
 MEMORY CHECK OK
 *****************LOG OF LANDCLASS SUMMARY*****************
@@ -307,175 +307,178 @@ num   new_indices[num]
 *******************************************************
          VALIDATING INPUT GRIDS
 
-Validating urban input grid: ../Input/taipei_coarse_base/taipei_coarse_base.urban.1993.gif
+Validating urban input grid: ../Input/demo200/demo200.urban.1930.gif
 
 Index Count PercentOfImage
-  0  98325     67.31%
- 13   5250      3.59%
- 21   3136      2.15%
- 26   2340      1.60%
- 34   1929      1.32%
- 45   1658      1.13%
- 48   1544      1.06%
- 58   1389      0.95%
- 69   1201      0.82%
- 77   1166      0.80%
- 87   1064      0.73%
- 91   1036      0.71%
- 98    962      0.66%
-108    953      0.65%
-114    953      0.65%
-120    916      0.63%
-134    790      0.54%
-137    801      0.55%
-146    826      0.57%
-154    804      0.55%
-164    758      0.52%
-173    796      0.54%
-179    787      0.54%
-190    857      0.59%
-199    902      0.62%
-203    888      0.61%
-211    941      0.64%
-217   1083      0.74%
-228   1157      0.79%
-236   1419      0.97%
-247   1883      1.29%
-255   7573      5.18%
+  0  39402     98.50%
+255    598      1.50%
 
-Validating urban input grid: ../Input/taipei_coarse_base/taipei_coarse_base.urban.2006.gif
+Validating urban input grid: ../Input/demo200/demo200.urban.1950.gif
 
 Index Count PercentOfImage
-  0  84299     57.70%
-  8   6201      4.24%
- 22   4040      2.77%
- 29   2959      2.03%
- 34   2487      1.70%
- 46   2115      1.45%
- 55   1926      1.32%
- 62   1585      1.08%
- 70   1544      1.06%
- 72   1346      0.92%
- 84   1322      0.90%
- 88   1188      0.81%
-100   1175      0.80%
-106   1081      0.74%
-112   1079      0.74%
-122   1004      0.69%
-130   1018      0.70%
-140   1048      0.72%
-145   1027      0.70%
-156    957      0.66%
-164    961      0.66%
-175   1012      0.69%
-181    977      0.67%
-187   1070      0.73%
-195   1101      0.75%
-206   1168      0.80%
-210   1223      0.84%
-223   1346      0.92%
-226   1542      1.06%
-238   2011      1.38%
-244   2852      1.95%
-253  11423      7.82%
+  0  39139     97.85%
+255    861      2.15%
 
-Validating urban input grid: ../Input/taipei_coarse_base/taipei_coarse_base.urban.2025.gif
+Validating urban input grid: ../Input/demo200/demo200.urban.1970.gif
 
 Index Count PercentOfImage
-  0  80517     55.12%
-  8   6077      4.16%
- 18   3921      2.68%
- 29   2946      2.02%
- 33   2567      1.76%
- 45   2213      1.51%
- 52   1911      1.31%
- 56   1707      1.17%
- 64   1598      1.09%
- 78   1448      0.99%
- 87   1299      0.89%
- 93   1318      0.90%
-100   1227      0.84%
-107   1161      0.79%
-118   1140      0.78%
-123   1232      0.84%
-129   1117      0.76%
-139   1075      0.74%
-151   1065      0.73%
-157   1021      0.70%
-165   1102      0.75%
-173   1052      0.72%
-183   1066      0.73%
-186   1136      0.78%
-197   1197      0.82%
-200   1218      0.83%
-208   1295      0.89%
-216   1325      0.91%
-231   1492      1.02%
-233   1788      1.22%
-244   2389      1.64%
-248  14467      9.90%
+  0  38179     95.45%
+255   1821      4.55%
 
-Validating road input grid: ../Input/taipei_coarse_base/taipei_coarse_base.roads.1993.gif
+Validating urban input grid: ../Input/demo200/demo200.urban.1990.gif
 
 Index Count PercentOfImage
-  0  120822     82.71%
- 10   4612      3.16%
- 23   3302      2.26%
- 25   2731      1.87%
- 36   2499      1.71%
- 43   2232      1.53%
- 50   1926      1.32%
- 58   1551      1.06%
- 68   1205      0.82%
- 78    988      0.68%
- 84    811      0.56%
- 89    634      0.43%
- 97    488      0.33%
-108    442      0.30%
-118    333      0.23%
-123    254      0.17%
-135    192      0.13%
-141    170      0.12%
-147    146      0.10%
-157    127      0.09%
-163     98      0.07%
-169     75      0.05%
-178     58      0.04%
-189     53      0.04%
-195     48      0.03%
-201     40      0.03%
-210     28      0.02%
-223     32      0.02%
-224     20      0.01%
-236     27      0.02%
-246     33      0.02%
-250    110      0.08%
+  0  36119     90.30%
+255   3881      9.70%
 
-Validating road input grid: ../Input/taipei_coarse_base/taipei_coarse_base.roads.2006.gif
+Validating road input grid: ../Input/demo200/demo200.roads.1930.gif
 
 Index Count PercentOfImage
-  0  119599     81.87%
- 12   5520      3.78%
- 20   3785      2.59%
- 29   3073      2.10%
- 38   2805      1.92%
- 45   2396      1.64%
- 50   2132      1.46%
- 59   1520      1.04%
- 69   1148      0.79%
- 72    974      0.67%
- 87    711      0.49%
- 89    535      0.37%
- 98    423      0.29%
-105    349      0.24%
-118    228      0.16%
-127    175      0.12%
-134    146      0.10%
-141    120      0.08%
-147     73      0.05%
-153     63      0.04%
-163     42      0.03%
-169     34      0.02%
-183     36      0.02%
-187     21      0.01%
-198    
+  0  39625     99.06%
+255    375      0.94%
+
+Validating road input grid: ../Input/demo200/demo200.roads.1950.gif
+
+Index Count PercentOfImage
+  0  39335     98.34%
+255    665      1.66%
+
+Validating road input grid: ../Input/demo200/demo200.roads.1970.gif
+
+Index Count PercentOfImage
+  0  39055     97.64%
+255    945      2.36%
+
+Validating road input grid: ../Input/demo200/demo200.roads.1990.gif
+
+Index Count PercentOfImage
+  0  38896     97.24%
+255   1104      2.76%
+
+Validating landuse input grid: ../Input/demo200/demo200.landuse.1930.gif
+
+Index Count PercentOfImage
+  1   2109      5.27%
+  2   3866      9.66%
+  3   5897     14.74%
+  4  24886     62.22%
+  5   2581      6.45%
+  6    603      1.51%
+  7     58      0.14%
+
+Validating landuse input grid: ../Input/demo200/demo200.landuse.1990.gif
+
+Index Count PercentOfImage
+  1   4503     11.26%
+  2   8642     21.61%
+  3   5776     14.44%
+  4  18031     45.08%
+  5   2581      6.45%
+  6    408      1.02%
+  7     59      0.15%
+
+Validating slope input grid: ../Input/demo200/demo200.slope.gif
+
+Validating excluded input grid: ../Input/demo200/demo200.excluded.gif
+
+Validating background input grid: ../Input/demo200/demo200.hillshade.water.gif
+
+Validation OK
+*******************************************************
+*******************************************************
+
+
+*******************************INPUT GIFs*******************************
+
+  Urban GIFs
+      rowXcol cb bpp path
+      rowXcol cb bpp min max path
+      200X200  7  8    0 255 ../Input/demo200/demo200.urban.1930.gif
+      200X200  7  8    0 255 ../Input/demo200/demo200.urban.1950.gif
+      200X200  8  8    0 255 ../Input/demo200/demo200.urban.1970.gif
+      200X200  8  8    0 255 ../Input/demo200/demo200.urban.1990.gif
+  Road GIFs
+      rowXcol cb bpp path
+      200X200  7  8    0 255 ../Input/demo200/demo200.roads.1930.gif
+      200X200  7  8    0 255 ../Input/demo200/demo200.roads.1950.gif
+      200X200  7  8    0 255 ../Input/demo200/demo200.roads.1970.gif
+      200X200  7  8    0 255 ../Input/demo200/demo200.roads.1990.gif
+  Landuse GIFs
+      rowXcol cb bpp path
+      200X200  8  8    1   7 ../Input/demo200/demo200.landuse.1930.gif
+      200X200  7  8    1   7 ../Input/demo200/demo200.landuse.1990.gif
+  Excluded GIF
+      rowXcol cb bpp path
+      200X200  8  8    1 100 ../Input/demo200/demo200.excluded.gif
+  Slope GIF
+      rowXcol cb bpp path
+      200X200  7  8    0  41 ../Input/demo200/demo200.slope.gif
+  Background GIF
+      rowXcol cb bpp path
+      200X200  7  7    0 223 ../Input/demo200/demo200.hillshade.water.gif
+cb = # of color bits
+bpp = # bits per pixel
+
+
+
+Verifying Data Input Files
+igrid_obj.c 1618 Data Input Files: OK
+main.c 436 Total Number of Runs = 32
+
+**************LOGGING TRANSITION MATRICES**************
+Land 1 classed pixel count (class_count_sum0) = 40000
+Land 2 classed pixel count (class_count_sum1) = 40000
+
+       LOGGING CLASS PER PIXEL TRANSITION    
+          Unclass     Urban     Agric     Range    Forest     Water   Wetland    Barren 
+ Unclass        0         0         0         0         0         0         0         0 
+   Urban        0      2105         1         1         2         0         0         0 
+   Agric        0      1027      2776        17        46         0         0         0 
+   Range        0       246      1193      4229       229         0         0         0 
+  Forest        0      1085      4513      1529     17754         1         3         1 
+   Water        0         1         0         0         0      2580         0         0 
+ Wetland        0        39       159         0         0         0       405         0 
+  Barren        0         0         0         0         0         0         0        58 
+
+       LOGGING ANNUAL TRANSITION PROBABILITIES 
+          Unclass     Urban     Agric     Range    Forest     Water   Wetland    Barren 
+ Unclass     0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00 
+   Urban     0.00     99.81      0.05      0.05      0.09      0.00      0.00      0.00 
+   Agric     0.00     26.56     71.81      0.44      1.19      0.00      0.00      0.00 
+   Range     0.00      4.17     20.23     71.71      3.88      0.00      0.00      0.00 
+  Forest     0.00      4.36     18.13      6.14     71.34      0.00      0.01      0.00 
+   Water     0.00      0.04      0.00      0.00      0.00     99.96      0.00      0.00 
+ Wetland     0.00      6.47     26.37      0.00      0.00      0.00     67.16      0.00 
+  Barren     0.00      0.00      0.00      0.00      0.00      0.00      0.00    100.00 
+
+       LOGGING LAND CLASS AVERAGE SLOPES 
+                        Land1             Land2         Average
+Class Totals:   count[pct_change]  count[pct_change]     Slope
+     Unclass          0 [  0.0]          0 [  0.0]       0.000
+       Urban       2109 [  5.3]       4503 [ 11.3]       2.667
+       Agric       3866 [  9.7]       8642 [ 21.6]       1.797
+       Range       5897 [ 14.7]       5776 [ 14.4]       3.123
+      Forest      24886 [ 62.2]      18031 [ 45.1]       6.796
+       Water       2581 [  6.5]       2581 [  6.5]       0.000
+     Wetland        603 [  1.5]        408 [  1.0]       0.784
+      Barren         58 [  0.1]         59 [  0.1]       2.458
+
+
+
+************************LOG OF BASE STATISTICS FOR URBAN INPUT DATA********************
+ Year       Area      Edges   Clusters         Pop       Mean Center        Radius   Avg Slope  MeanClusterSize
+ 1930     598.00     307.00      21.00      598.00  (   87.40,  118.54)      13.80        1.18      28.000
+ 1950     861.00     391.00      22.00      861.00  (   89.40,  111.49)      16.55        1.64      39.000
+ 1970    1821.00     722.00      43.00     1821.00  (   88.86,  107.36)      24.08        2.05      42.000
+ 1990    3881.00    1171.00      41.00     3881.00  (   86.65,  105.71)      35.15        2.45      94.000
+
+
+growth.c 671 Run=  0 of 32 MC=0 of 2 
+growth.c 671 Run=  0 of 32 MC=1 of 2   1.562% complete; Elapsed=0000:00:00:00 ; ETC=0000:00:00:14
+growth.c 671 Run=  1 of 32 MC=0 of 2   3.125% complete; Elapsed=0000:00:00:00 ; ETC=0000:00:00:13
+growth.c 671 Run=  1 of 32 MC=1 of 2   4.688% complete; Elapsed=0000:00:00:00 ; ETC=0000:00:00:13
+growth.c 671 Run=  2 of 32 MC=0 of 2   6.250% complete; Elapsed=0000:00:00:00 ; ETC=0000:00:00:13
+growth.c 671 Run=  2 of 32 MC=1 of 2   7.812% complete; Elapsed=0000:00:00:01 ; ETC=0000:00:00:12
+growth.c 671 Run=  3 of 32 MC=0 of 2   9.375% complete; Elapsed=0000:00:00:01 ; ETC=0000:00:00:12
+growth.c 671 Run=  3 of 32 MC=1 of 2  10.938% complete; Elapsed=0000:00:00:01 ; ETC=0000:00:00:12
+growth.c 671 Run=  4 of 32 MC=0 of 2  12.500% complete; Elapsed=0000:00:00:01 ; ETC=0000:00:00:11

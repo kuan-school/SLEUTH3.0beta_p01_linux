@@ -31,8 +31,8 @@
 #               be located. 
 #   WHIRLGIF_BINARY: relative path to 'whirlgif' gif animation program. 
 #                    These must be compiled before execution. 
-INPUT_DIR=/Users/morris/IT_research/SLEUTH3.0beta_p01_linux/Input/taipei_coarse_base/ 
-OUTPUT_DIR=/Users/morris/IT_research/SLEUTH3.0beta_p01_linux/output_coarse_calib/
+INPUT_DIR=../Input/taipei_coarse_base/ 
+OUTPUT_DIR=../output_coarse_calib/
 WHIRLGIF_BINARY=../Whirlgif/whirlgif 
 
 # II. RUNNING STATUS (ECHO) 
@@ -58,7 +58,7 @@ WRITE_COEFF_FILE(YES/NO)=no
 WRITE_AVG_FILE(YES/NO)=no
 WRITE_STD_DEV_FILE(YES/NO)=no 
 WRITE_MEMORY_MAP(YES/NO)=YES
-LOGGING(YES/NO)=YES
+LOGGING(YES/NO)=NO
 
 # IV. Log File Preferences 
 # INDICATE CONTENT OF LOG_# FILE (IF LOGGING == ON). 
@@ -82,7 +82,7 @@ LOGGING(YES/NO)=YES
 #     each module. If running in parallel, LOG_0 will contain timing for 
 #     complete job. 
 LOG_LANDCLASS_SUMMARY(YES/NO)=yes 
-LOG_SLOPE_WEIGHTS(YES/NO)=no 
+LOG_SLOPE_WEIGHTS(YES/NO)=yes 
 LOG_READS(YES/NO)=no
 LOG_WRITES(YES/NO)=no
 LOG_COLORTABLES(YES/NO)=no
@@ -227,14 +227,13 @@ URBAN_DATA= taipei_coarse_base.urban.2025.gif
 # 
 ROAD_DATA= taipei_coarse_base.roads.1993.gif 
 ROAD_DATA= taipei_coarse_base.roads.2006.gif 
-ROAD_DATA= taipei_coarse_base.roads.2025.gif 
-# 
-# Landuse data GIFs 
-#  format:  <location>.landuse.<date>.[<user info>].gif 
+ROAD_DATA= taipei_coarse_base.roads.2025.gif
+
+# Landuse data GIFs#  format:  <location>.landuse.<date>.[<user info>].gif 
 # 
 LANDUSE_DATA= taipei_coarse_base.landuse.1993.gif 
-LANDUSE_DATA= taipei_coarse_base.landuse.2006.gif 
-LANDUSE_DATA= taipei_coarse_base.landuse.2025.gif 
+#LANDUSE_DATA= taipei_coarse_base.landuse.2006.gif 
+LANDUSE_DATA= taipei_coarse_base.landuse.2025.gif
 # 
 # Excluded data GIF 
 #  format:  <location>.excluded.[<user info>].gif 
@@ -244,7 +243,7 @@ EXCLUDED_DATA= taipei_coarse_base.excluded.gif
 # Slope data GIF 
 #  format:  <location>.slope.[<user info>].gif 
 # 
-SLOPE_DATA= taipei_coarse_base.slope.gif 
+SLOPE_DATA= taipei_coarse_base.slope_remapped.gif 
 # 
 # Background data GIF 
 #  format:   <location>.hillshade.[<user info>].gif 

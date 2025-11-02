@@ -8,8 +8,7 @@
 #define TESTING 3
 #define PIXEL long
 #define GRID_P PIXEL*
-#define BOOLEAN int
-#define MAX_FILENAME_LEN 150
+#define MAX_FILENAME_LEN 1024
 #define RED_MASK   0XFF0000
 #define GREEN_MASK 0X00FF00
 #define BLUE_MASK  0X0000FF
