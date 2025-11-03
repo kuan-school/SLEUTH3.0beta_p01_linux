@@ -34,6 +34,6 @@ def remap_gif_pixels(input_path, output_path):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    input_gif_path = "/workspaces/SLEUTH3.0beta_p01_linux/Input/taipei_coarse_base/taipei_coarse_base.slope.gif"
-    output_gif_path = "/workspaces/SLEUTH3.0beta_p01_linux/Input/taipei_coarse_base/taipei_coarse_base.slope_remapped.gif"
+    input_gif_path = "/workspaces/SLEUTH3.0beta_p01_linux/Input/taipei_fine_base/taipei.slope.gif"
+    output_gif_path = "/workspaces/SLEUTH3.0beta_p01_linux/Input/taipei_fine_base/taipei.slope_remapped.gif"
     remap_gif_pixels(input_gif_path, output_gif_path)
